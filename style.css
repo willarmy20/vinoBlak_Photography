@@ -39,6 +39,7 @@ nav ul{
 
 .link a{
     display: inline-block;
+    position: relative;
     padding: 2rem;
     color: white;
 }
