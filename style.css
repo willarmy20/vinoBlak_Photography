@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+main{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-self: flex-end;
+}
+
+.link a{
+    display: inline-block;
+    padding: 2rem;
+    color: white;
+}
+
+.link a:hover{
+    color: orange;
+}
+
+.logo{
+    width: 200px;
+    height: 250px;
+    grid-column-start: 2;
+    margin: -90px;
+}
+
+
+.big-name{
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 7.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.image-wrap{
+    position: absolute;
+    width: 85%;
+    max-width: 1000px;
+    height: 0px;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    background-image: url(./img/Vino.jpeg);
+    background-size: 100%;
+    background-position: 50% 26%;
+    background-repeat: no-repeat;
+}
+
+.scroll{
+    position: absolute;
+    font-weight: 300;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    bottom: 70px;
+    height: 50px;
+}
+
+.button{
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.button::before,
+.button::after{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid white;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: button 1s ease-in-out infinite;
+}
+
+.button::after{
+    top: 30%;
+    animation-delay: .3s
+}
+
+@keyframes button{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: 90%;
+    }
+}
+
+.bottom-section{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-section p i{
+    margin-right: 1rem;
+}
+
+.social{
+    display: flex;
+}
+
+.social a{
+    margin-left: 0.8rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.social a:hover{
+    color: orange;
+}
