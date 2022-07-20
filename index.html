@@ -11,9 +11,11 @@
 <body>
 
     <main>
-        <nav class="hide">
+        <button class="hambuger-menu hide" aria-controls="primary-navigation" aria-expanded="false"><span><i class="fa-solid fa-bars"></i></span></button>
+
+        <nav class="hide nav-bar"id="primary-navigation" >
             <img src="/img/logo.png" alt="" class="logo">
-            <ul>
+            <ul class="list hide" data-visible="false">
                 <li class="link">
                     <a href="#">About</a>
                 </li>
@@ -34,8 +36,8 @@
         <span class="button hide"></span>
     
         <div class="bottom-section hide">
-            <p>
-                <i class="fa-solid fa-map-pin"></i> Located in Georgia
+            <p class="location">
+                <i class="fa-solid fa-map-pin"></i>Located in Georgia
             </p>
             <ul class="social">
                 <li>
@@ -49,5 +51,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="photo.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>
