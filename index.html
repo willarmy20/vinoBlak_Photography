@@ -1,56 +1,85 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vino Black Photography</title>
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2150e10e8d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-    <main>
-        <button class="hambuger-menu hide" aria-controls="primary-navigation" aria-expanded="false"><span><i class="fa-solid fa-bars"></i></span></button>
-
-        <nav class="hide nav-bar"id="primary-navigation" >
-            <img src="/img/logo.png" alt="" class="logo">
-            <ul class="list hide" data-visible="false">
-                <li class="link">
-                    <a href="#">About</a>
-                </li>
-                <li class="link">
-                    <a href="#">Projects</a>
-                </li>
-                <li class="link">
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+    <!-- navBar-->
+        <nav>
+            <!-- Wrapping Everything in a container -->
+            <div class="nav_container container">
+                <a href="index.html" class="nav_log"><img src="./img/logo.png" alt="navLogo" class="logo"></a>
+                <ul class="navLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#exhibitions">Exhibitions</a></li>
+                </ul>
+                <!-- icons -->
+                <!-- target is going to make them open in another tab -->
+                <ul class="nav_socials">
+                    <li><a href="https://instagram.com"><i class="fa-brands fa-instagram" target="_blank"></i></a></li>
+                </ul>
+                <button class="nav_toggle-btn" id="nav_toggle-open"><i class="fa-solid fa-camera"></i></button>
+                <button class="nav_toggle-btn" id="nav_toggle-close"><i class="fa-solid fa-camera-rotate"></i></button>
+            </div>
         </nav>
+        <!-- endOfnavBar-->
 
-        <div class="image-wrap"></div>
-    
-        <h1 class="big-name">Photography</h1>
-
-        <span class="scroll hide">Scroll Down</span>
-        <span class="button hide"></span>
-    
-        <div class="bottom-section hide">
-            <p class="location">
-                <i class="fa-solid fa-map-pin"></i>Located in Georgia
-            </p>
-            <ul class="social">
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-            </ul>
+        <header>
+            <div class="headerContainer">
+                <div class="header_left">
+                    <div class="header_img-bg"></div>
+                    <div class="header_img-lg">
+                        <img src="./img/Cold.jpeg" alt="Header Image">
+                    </div>
+                    <div class="header_img-sm">
+                        <img src="./img/Cold.jpeg" alt="Header Img">
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="header_head">
+                        <div class="empty header_empty"></div>
+                        <a class="header_tag">Sharing Memories For A Lifetime</a>
+                    </div>
+                    <h1>Capturing That Perfect Moment Through My Lense</h1>
+                    <p>
+                        Started just drawing things I use to see like cars and stuff. Then I got access to a camera and the rest is history....
+                    </p>
+                    <a href="mailto:iqdabrand@gmail.com" class="header_btn-md">Let's Talk</a>
+                </div>
+            </div>
+        </header>
+        <div class="header_frames">
+            <div class="header_frame">
+                <img src="./img/camera.jpg" alt="Header Frame One">
+            </div>
+            <div class="header_frame">
+                <img src="./img/kodak.jpg" alt="Header Frame Two">
+            </div>
         </div>
-    </main>
+        <a href="mailto:iqdabrand@gmail.com" class="contact_btn header_btn">
+            <i class="fa-solid fa-camera"></i>
+            <p>CONTACT - SEND ME A EMAIL</p>
+        </a>
+        <!-- endOfHeader-->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="photo.js"></script>
-    <script src="nav.js"></script>
+        <section id="about">
+            <div class="container about_container">
+                <h2 class="about_title">About<br/> Vino Blak</h2>
+                <a href="mailto:support@gmail.com" class="contact_btn about_btn">
+                    <i class="fa-solid fa-camera"></i>
+                    <p>CONTACT - SEND ME A EMAIL</p>
+                </a>
+            </div>
+        </section>
+
+    <script src="./main.js"></script>
 </body>
 </html>
