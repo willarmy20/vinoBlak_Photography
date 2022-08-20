@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,80 +7,205 @@
     <title>Vino Black Photography</title>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2150e10e8d.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <!-- navBar-->
-        <nav>
-            <!-- Wrapping Everything in a container -->
-            <div class="nav_container container">
-                <a href="index.html" class="nav_log"><img src="./img/logo.png" alt="navLogo" class="logo"></a>
-                <ul class="navLinks">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#exhibitions">Exhibitions</a></li>
-                </ul>
-                <!-- icons -->
-                <!-- target is going to make them open in another tab -->
-                <ul class="nav_socials">
-                    <li><a href="https://instagram.com"><i class="fa-brands fa-instagram" target="_blank"></i></a></li>
-                </ul>
-                <button class="nav_toggle-btn" id="nav_toggle-open"><i class="fa-solid fa-camera"></i></button>
-                <button class="nav_toggle-btn" id="nav_toggle-close"><i class="fa-solid fa-camera-rotate"></i></button>
-            </div>
-        </nav>
-        <!-- endOfnavBar-->
+    <nav>
+        <!-- Wrapping Everything in a container -->
+        <div class="nav_container container">
+            <a href="index.html" class="nav_log"><img src="./img/logo.png" alt="navLogo" class="logo"></a>
+            <ul class="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#exhibitions">Exhibitions</a></li>
+            </ul>
+            <!-- icons -->
+            <!-- target is going to make them open in another tab -->
+            <ul class="nav_socials">
+                <li><a href="https://instagram.com"><i class="fa-brands fa-instagram" target="_blank"></i></a></li>
+            </ul>
+            <button class="nav_toggle-btn" id="nav_toggle-open"><i class="fa-solid fa-camera"></i></button>
+            <button class="nav_toggle-btn" id="nav_toggle-close"><i class="fa-solid fa-camera-rotate"></i></button>
+        </div>
+    </nav>
+    <!-- endOfnavBar-->
 
-        <header>
-            <div class="headerContainer">
-                <div class="header_left">
-                    <div class="header_img-bg"></div>
-                    <div class="header_img-lg">
-                        <img src="./img/Cold.jpeg" alt="Header Image">
-                    </div>
-                    <div class="header_img-sm">
-                        <img src="./img/Cold.jpeg" alt="Header Img">
-                    </div>
+    <header>
+        <div class="headerContainer">
+            <div class="header_left">
+                <div class="header_img-bg"></div>
+                <div class="header_img-lg">
+                    <img src="./img/Cold.jpeg" alt="Header Image">
                 </div>
-                <div class="header_right">
-                    <div class="header_head">
-                        <div class="empty header_empty"></div>
-                        <a class="header_tag">Sharing Memories For A Lifetime</a>
-                    </div>
-                    <h1>Capturing That Perfect Moment Through My Lense</h1>
-                    <p>
-                        Started just drawing things I use to see like cars and stuff. Then I got access to a camera and the rest is history....
-                    </p>
-                    <a href="mailto:iqdabrand@gmail.com" class="header_btn-md">Let's Talk</a>
+                <div class="header_img-sm">
+                    <img src="./img/Cold.jpeg" alt="Header Img">
                 </div>
             </div>
-        </header>
-        <div class="header_frames">
-            <div class="header_frame">
-                <img src="./img/camera.jpg" alt="Header Frame One">
-            </div>
-            <div class="header_frame">
-                <img src="./img/kodak.jpg" alt="Header Frame Two">
+            <div class="header_right">
+                <div class="header_head">
+                    <div class="empty header_empty"></div>
+                    <a class="header_tag">Sharing Memories For A Lifetime</a>
+                </div>
+                <h1>Capturing That Perfect Moment Through My Lense</h1>
+                <p>
+                    Started just drawing things I use to see like cars and stuff. Then I got access to a camera and the
+                    rest is history....
+                </p>
+                <a href="mailto:iqdabrand@gmail.com" class="header_btn-md">Let's Talk</a>
             </div>
         </div>
-        <a href="mailto:iqdabrand@gmail.com" class="contact_btn header_btn">
-            <i class="fa-solid fa-camera"></i>
-            <p>CONTACT - SEND ME A EMAIL</p>
-        </a>
-        <!-- endOfHeader-->
+        <div class="line">
+            __________________________________________________________________________________________________________________________________________________________________________________
+        </div>
+    </header>
+    <div class="header_frames">
+        <div class="header_frame">
+            <img src="./img/camera.jpg" alt="Header Frame One">
+        </div>
+        <div class="header_frame">
+            <img src="./img/kodak.jpg" alt="Header Frame Two">
+        </div>
+    </div>
+    <a href="mailto:iqdabrand@gmail.com" class="contact_btn header_btn">
+        <i class="fa-solid fa-camera"></i>
+        <p>CONTACT - SEND ME A EMAIL</p>
+    </a>
+    <!-- endOfHeader-->
 
-        <section id="about">
-            <div class="container about_container">
-                <h2 class="about_title">About<br/> Vino Blak</h2>
-                <a href="mailto:support@gmail.com" class="contact_btn about_btn">
+    <section id="about">
+        <div class="container about_container">
+            <h2 class="about_title">About<br /> Vino Blak</h2>
+            <a href="mailto:support@gmail.com" class="contact_btn about_btn">
+                <i class="fa-solid fa-camera"></i>
+                <p>CONTACT - SEND ME A EMAIL</p>
+            </a>
+            <div class="about_left">
+                <div class="about_img">
+                    <div class="about_img-bg"></div>
+                    <div class="about_img-lg">
+                        <img src="./img/Vino.jpeg" alt="About Vino Blak">
+                    </div>
+                    <div class="about_img-sm">
+                        <img src="./img/Vino.jpeg" alt="About Vino Blak">
+                    </div>
+                </div>
+            </div>
+            <div class="about_right">
+                <div class="empty about_empty"></div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sapiente, placeat vel officiis error ab
+                    corporis.
+                </p>
+                <br />
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet sequi animi vel sit error magnam
+                    consequuntur, aliquid ut repellendus et non nam inventore, pariatur facere ipsum facilis dignissimos
+                    harum?
+                </p>
+                <br />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae esse assumenda quisquam sit amet
+                    tempore eius possimus.
+                </p>
+                <br />
+            </div>
+        </div>
+    </section>
+    <!-- endOfabout-->
+
+    <section id="gallery">
+        <div class="container gallery_container swiper mySwiper">
+            <div class="gallery_head">
+                <h2 class="gallery_title">My Gallery</h2>
+                <div class="empty gallery_empty"></div>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nam corporis eaque sapiente nulla natus
+                beatae quia maiores, numquam odio consequatur, asperiores quo. Dolorum, sint totam voluptate accusamus
+                placeat dolorem!
+            </p>
+            <div class="swiper-wrapper">
+                <article class="swiper-slide">
+                    <img src="./img/outside.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/girl.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/littleGirl.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/blackLivesMatter2.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/blackLivesMatter.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/ballarina.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/girlAndGlasses.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/fatherAndSon.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/rain.jpg">
+                </article>
+                <article class="swiper-slide">
+                    <img src="./img/siblings.jpg">
+                </article>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- endOfgallery-->
+
+    <section id="exhibitions">
+        <div class="container exhibitions_container">
+            <h2 class="exhibitions_title">Exhibitions</h2>
+            <div class="empty exhibitions_empty"></div>
+            <div class="exhibitions_head">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequuntur beatae harum porro!
+                    Debitis, optio exercitationem esse labore fugit ipsa ipsum ducimus explicabo iusto eaque, quod sit,
+                    molestias possimus? Vel?
+                </p>
+                <a href="mailto:support@gmail.com" class="contact_btn exhibitions_btn">
                     <i class="fa-solid fa-camera"></i>
                     <p>CONTACT - SEND ME A EMAIL</p>
                 </a>
             </div>
-        </section>
+            <div class="exhibitions_gallery">
+                <article><img src="./img/littleBoyBlue.jpg"></article>
+                <article><img src="./img/ladyInSweater.jpg"></article>
+                <article><img src="./img/red.jpg"></article>
+                <article><img src="./img/groupOfGirls.jpg"></article>
+                <article><img src="./img/yellow.jpg"></article>
+                <article><img src="./img/kids.jpg"></article>
+                <article><img src="./img/green.jpg"></article>
+                <article><img src="./img/kidNCamera.jpg"></article>
+            </div>
+        </div>
+    </section>
+    <!-- endOfexhibitions-->
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_head">
+                <a href="index.html" class="footer_logo"><img src="./img/logo.png" alt="footerLogo"></a>
+            <h2 class="footer_creater">Created By: <a href="https://iqdabrand.com" class="mySite">iqdabrand.com 2022</a></h2>
+        </div>
+    </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
 </body>
+
 </html>
