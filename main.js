@@ -42,4 +42,23 @@ var swiper = new Swiper(".mySwiper", {
 
 const nav = document.querySelector('.navLinks');
 const openNavBtn = document.querySelector('#nav_toggle-open');
-const close
+const closeNavBtn = document.querySelector('nav_toggle-close');
+
+
+
+
+const openNav = () => {
+  nav.style.display = "flex";
+  openNavBtn.display = 'none';
+  closeNavBtn.style.display = 'inline-block';
+}
+
+const closeNav = () => {
+  nav.style.display = "none";
+  openNavBtn.display = 'inline-block';
+  closeNavBtn.style.display = 'none';
+}
+
+
+
+openNavBtn.addEventListener('click', openNav)

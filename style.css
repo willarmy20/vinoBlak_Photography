@@ -516,8 +516,9 @@ h2 {
 /* MEDIA Queries medium screens */
 
 @media screen and (max-width:1024px) {
-    .container {
-        width: 16rem;
+
+    .nav_container {
+        width: 60%;
         position: relative;
     }
 
@@ -531,7 +532,7 @@ h2 {
     }
 
     .nav_socials {
-        display: none
+        display: none;
     }
 
     .navLinks {
@@ -540,16 +541,17 @@ h2 {
         right: 0;
         flex-direction: column;
         gap: 0;
-        display: none;
+        color: yellow;
     }
+
 
     .navLinks li {
         height: 5rem;
-        box-shadow: -3rem 3rem 3rem red;
+        box-shadow: -3rem 3rem 3rem yellow;
     }
 
     .navLinks li a {
-        background: white;
+        color: blueviolet;
         height: 100%;
         width: 100%;
         display: flex;
